@@ -137,3 +137,4 @@ $\rho$ | $K(T-t)e^{-r(T-t)}N(D_2)$ | $-K(T-t)e^{-r(T-t)}N(-D_2)$ | l+ s- | l- s+
     - GJR-GARCH(1,1): $\sigma^2_{t+1} = \omega + \alpha R_t^2 + \alpha \theta I_tR^2_t + \beta \sigma_t^2, I_t= 1,\; if\; R_t<0$
     - EGARCH(1,1): $ln(\sigma^2_{t+1}) = \omega + \alpha(\phi R_t+\gamma[|R_t|-E[|R_t|]]) + \beta ln(\sigma^2_t)$, display leverage effect when $\alpha \phi < 0$
     - With NIF: $NIF(z_t) = (|z_t-\theta_1| - \theta_2(z_t-\theta_1))^{2 \theta_3}$, and $\sigma^2_{t+1} = \omega + \alpha \sigma^2_t NIF(z_t) + \beta \sigma_t^2$, GARCH: (0,0,1), NGARCH: ($\theta_1$,0,1)
+    - Return standarized by conditional volatility conform to normal distribution except for extreme left (loss tail is thicker or left skew)
